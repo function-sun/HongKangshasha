@@ -1,0 +1,22 @@
+{
+  "name": "hongkangshasha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/function-sun/HongKangshasha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/function-sun/HongKangshasha/issues"
+  },
+  "homepage": "https://github.com/function-sun/HongKangshasha#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.1"
+  }
+}
