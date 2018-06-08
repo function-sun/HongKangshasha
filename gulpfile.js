@@ -20,9 +20,16 @@ gulp.task("sass",function(){
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\HongKangshasha\\css"));
 });
 
+//js文件
+gulp.task("jsfail",function(){
+	gulp.src("js/*.js")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\HongKangshasha\\js"));
+});
+
 //监听
 gulp.task("watchall",function(){
 	gulp.watch("*.html",["copyindex"]);
+	gulp.watch("js/*.js",["jsfail"]);
 	gulp.watch("scss/*.scss",["sass"]);
 	gulp.watch("img/**/*.{jpg,png}",["images"]);
 });
