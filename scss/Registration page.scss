@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+body,div,p,ol,ul,li,dl,dd,dt,form,table,tr,td,input,h1,h2,h3,h4,h5,h6,figure,fieldset,textarea{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+    overflow-x:hidden;
+}
+img{
+    display:block;
+    border:none;
+}
+a{
+    text-decoration:none;
+}
+ul li{
+    list-style:none;
+}
+
+
+//登录注册引导模块
+.titleNavigation{
+    width:100%;
+    height:32px;
+    background:#f2f2f2;
+    border-bottom:1px solid #b5b5b5;
+}
+.titleNavigation_center{
+    width:1230px;
+    height:32px;
+    margin:0 auto;
+}
+.titleLeft{
+    width:220px;
+    height:32px;
+    margin-top:10px;
+    float:left;
+    p:nth-child(1){
+        font-size:12px;
+        color:#6c6e69;
+        float:left;
+    }
+    p:nth-child(2){
+        float:left;
+        margin-left:20px;
+        font-size:12px;
+        color:#6c6e69;
+        a{
+            font-size:12px;
+            color:#eb3c7d;
+            text-decoration:underline;
+        }
+    }
+}
+.titleRight{
+    height:32px;
+    float:right;
+    a{
+        display:inline-block;
+        height:30px;
+        text-align:center;
+        padding:0 10px;
+        line-height:30px;
+        font-size:12px;
+        color:#6d6b6c;
+    }
+    a:hover{
+        background:#fff;
+    }
+    a:nth-child(1){
+        img{
+            display:inline;
+            padding-top:8px;
+            padding-right:4px;
+        }
+    }
+    a:nth-child(2){
+        img{
+            display:inline;
+            padding-top:8px;
+            padding-right:4px;
+        }
+    }
+    a:nth-child(3){
+        img{
+            display:inline;
+            padding-top:8px;
+            padding-right:4px;
+        }
+    }
+    .iconFour{
+        display:inline;
+    }
+}
+
+//logo
+.header{
+    width:100%;
+    height:95px;
+    background:#fff;
+}
+.header_center{
+    width:1186px;
+    height:95px;
+    margin:0 auto;
+    position:relative;
+}
+.logo{
+    width:200px;
+    height:50px;
+    margin-top:20px;
+    position:absolute;
+    left:0;
+}
+
+//注册区域
+.registration{
+    width:100%px;
+    height:680px;
+}
+.registration_center{
+    width:1186px;
+    height:680px;
+    margin:0 auto;
+}
+.registration_img{
+    width:600px;
+    height:354px;
+    margin-top:142px;
+    float:left;
+    margin-left:50px;
+}
+.registration_input{
+    width:420px;
+    height:558px;
+    margin-left:2px;
+    margin-top:40px;
+    float:left;
+    box-shadow:0 0 10px #cecece;
+    input:nth-child(2){
+        width:350px;
+        height:36px;
+        border:1px solid #cccccc;
+        outline:none;
+        margin-bottom:25px;
+        margin-left:35px;
+    }
+    input:nth-child(3){
+        width:350px;
+        height:36px;
+        border:1px solid #cccccc;
+        outline:none;
+        margin-bottom:25px;
+        margin-left:35px;
+    }
+    input:nth-child(4){
+        width:350px;
+        height:36px;
+        border:1px solid #cccccc;
+        outline:none;
+        margin-bottom:25px;
+        margin-left:35px;
+    }
+    input:nth-child(8){
+        width:350px;
+        height:40px;
+        border:none;
+        outline:none;
+        font-size:16px;
+        color:#fff;
+        background:#fc3f83;
+        margin-left:35px;
+    }
+}
+.inputBox{
+    width:420px;
+    height:97px;
+    p:first-child{
+        font-size:20px;
+        color:#5a5d6c;
+        margin-top:36px;
+        margin-left:36px;
+        float:left;
+    }
+    p:last-child{
+        margin-top:40px;
+        margin-right:38px;
+        font-size:12px;
+        float:right;
+        span{
+            color:#5a5d6c;
+            margin-right:6px;
+        }
+        a{
+            color:#fc3f83;
+        }
+    }
+}
+.numberText{
+    width:350px;
+    height:36px;
+    margin-bottom:25px;
+    margin-left:35px;
+    input{
+        width:130px;
+        height:36px;
+        border:1px solid #cccccc;
+        outline:none;
+        float:left;
+    }
+    img{
+        width:86px;
+        height:36px;
+        float:left;
+        margin:0 4px;
+    }
+    a{
+        width:90px;
+        height:36px;
+        font-size:14px;
+        color:#666666;
+        line-height:36px;
+    }
+}
+.checkboxT{
+    width:385px;
+    height:38px;
+    input{
+        display:block;
+        float:left;
+        margin-bottom:25px;
+        margin-left:35px;
+    }
+    span{
+        display:block;
+        float:left;
+        padding-left:14px;
+        font-size:12px;
+        color:#3e3e3e;
+    }
+//  input:nth-child(8){
+//      display:inline-block;
+//      margin-left:35px;
+//  }
+//  span:nth-child(9){
+//      margin-left:14px;
+//      font-size:12px;
+//      color:#3e3e3e;
+//  }
+}
