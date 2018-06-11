@@ -49,20 +49,101 @@ $(function() {
 	})
 })
 
-//注册页与后端打通
+//购物车固定定位
 $(function(){
-	let xhr = new XMLHttpRequest();
-	xhr.open("post","savemes.php",true);
-	xhr.onreadystateschange = function(){
-		if(xhr.readyStates == 4 && xhr.stutes == 200){
-			if(xhr.responseText == "success"){
-				location.href = "index.html";
+	$(".shoppinguser").hover(
+		function(){
+			$(".shoppinguser").css("background","#fc3f83");
+			$(".shoppinguser i").css("color","#fff");
+			$(".shoppinguser img").fadeIn("slow");
+		},
+		function(){
+			$(".shoppinguser").css("background","#4c4c4c");
+			$(".shoppinguser i").css("color","#d08c35");
+			$(".shoppinguser img").css("display","none");
+		}
+	);
+	$(".shoppingcar").hover(
+		function(){
+			$(".shoppingcar").css("background","#fc3f83");
+			$(".shoppingcar i").css("color","#fff");
+		},
+		function(){
+			$(".shoppingcar").css("background","#4c4c4c");
+			$(".shoppingcar i").css("color","#d08c35");
+		}
+	);
+	$(".shoppingzan").hover(
+		function(){
+			$(".shoppingzan").css("background","#fc3f83");
+			$(".shoppingzan i").css("color","#fff");
+			$(".shoppingzan img").fadeIn("slow");
+		},
+		function(){
+			$(".shoppingzan").css("background","#4c4c4c");
+			$(".shoppingzan i").css("color","#d08c35");
+			$(".shoppingzan img").css("display","none");
+		}
+	);
+	$(".shoppinghistory").hover(
+		function(){
+			$(".shoppinghistory").css("background","#fc3f83");
+			$(".shoppinghistory i").css("color","#fff");
+			$(".shoppinghistory img").fadeIn("slow");
+		},
+		function(){
+			$(".shoppinghistory").css("background","#4c4c4c");
+			$(".shoppinghistory img").css("display","none");
+			$(".shoppinghistory i").css("color","#d08c35");
+		}
+	);
+	$(".shoppingservice").hover(
+		function(){
+			$(".shoppingservice").css("background","#fc3f83");
+			$(".shoppingservice i").css("color","#fff");
+			$(".shoppingservice img").fadeIn("slow");
+		},
+		function(){
+			$(".shoppingservice").css("background","#4c4c4c");
+			$(".shoppingservice img").css("display","none");
+			$(".shoppingservice i").css("color","#d08c35");
+		}
+	);
+	$(".shoppingerweima").hover(
+		function(){
+			$(".shoppingerweima").css("background","#fc3f83");
+			$(".shoppingerweima i").css("color","#fff");
+		},
+		function(){
+			$(".shoppingerweima").css("background","#4c4c4c");
+			$(".shoppingerweima i").css("color","#d08c35");
+		}
+	);
+	$(window).scroll(function(){
+		if($(window).scrollTop != 0){
+			$(".shoppingtop").css("display","block");
+		}else{
+			$(".shoppingtop").css("display","none");
+		}
+	});
+})
+
+//限时特卖倒计时
+$(function(){
+	let total = 6*60*60;
+	let oSpan = document.getElementById("offerTimer1");
+	let timer = setInterval(function(){
+		total--;
+		if(total == 0) {
+			alert("时间已到");
+			try {
+				window.close();
+			} catch(e) {
+				clearInterval(timer);
 			}
 		}
-	}
-	xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
-	let sendstr = "username="+$("#username1").value+"&&userpassword="+$("#userpassword1").value;
-	xhr.send(sendstr);
+		oSpan.innerHTML = Math.floor(total/3600)+"时"+Math.floor(total/360)+"分"+(total%60)+"秒";
+	},1000);
 })
 
 

@@ -26,10 +26,24 @@ gulp.task("jsfail",function(){
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\HongKangshasha\\js"));
 });
 
+//php文件
+gulp.task("phpfail",function(){
+	gulp.src("php/*.php")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\HongKangshasha\\php"));
+});
+
+//iconfont-css文件
+gulp.task("iconfontcss",function(){
+	gulp.src("iconfont-css/*.css")
+	.pipe(gulp.dest("D:\\phpStudy\\WWW\\HongKangshasha\\css"));
+});
+
 //监听
 gulp.task("watchall",function(){
 	gulp.watch("*.html",["copyindex"]);
 	gulp.watch("js/*.js",["jsfail"]);
+	gulp.watch("php/*.php",["phpfail"]);
 	gulp.watch("scss/*.scss",["sass"]);
+	gulp.watch("css/*.css",["iconfontcss"]);
 	gulp.watch("img/**/*.{jpg,png}",["images"]);
 });

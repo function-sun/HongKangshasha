@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+body,div,p,ol,ul,li,dl,dd,dt,form,table,tr,td,input,h1,h2,h3,h4,h5,h6,figure,fieldset,textarea{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+    overflow-x:hidden;
+    background:#f2f2f2;
+}
+img{
+    display:block;
+    border:none;
+}
+a{
+    text-decoration:none;
+}
+ul li{
+    list-style:none;
+}
+
+//登录注册引导模块
+.titleNavigation{
+    width:100%;
+    height:32px;
+    background:#f2f2f2;
+    border-bottom:1px solid #b5b5b5;
+}
+.titleNavigation_center{
+    width:1230px;
+    height:32px;
+    margin:0 auto;
+}
+.titleLeft{
+    width:220px;
+    height:32px;
+    margin-top:10px;
+    float:left;
+    p:nth-child(1){
+        font-size:12px;
+        color:#6c6e69;
+        float:left;
+    }
+    p:nth-child(2){
+        float:left;
+        margin-left:20px;
+        font-size:12px;
+        color:#6c6e69;
+        a{
+            font-size:12px;
+            color:#eb3c7d;
+            text-decoration:underline;
+        }
+    }
+}
+.titleRight{
+    height:32px;
+    float:right;
+    margin-right:40px;
+    a{
+        display:inline-block;
+        height:30px;
+        text-align:center;
+        padding:0 10px;
+        line-height:30px;
+        font-size:12px;
+        color:#6d6b6c;
+    }
+    a:hover{
+        background:#fff;
+    }
+    a:nth-child(1){
+        img{
+            display:inline;
+            padding-top:8px;
+            padding-right:4px;
+        }
+    }
+    a:nth-child(2){
+        img{
+            display:inline;
+            padding-top:8px;
+            padding-right:4px;
+        }
+    }
+    a:nth-child(3){
+        img{
+            display:inline;
+            padding-top:8px;
+            padding-right:4px;
+        }
+    }
+    .iconFour{
+        display:inline;
+    }
+}
+
+//logo 搜索模块
+//logo
+.header{
+    width:100%;
+    height:95px;
+    background:#fff;
+}
+.header_center{
+    width:1230px;
+    height:95px;
+    margin:0 auto;
+    position:relative;
+}
+.logo{
+    width:200px;
+    height:50px;
+    margin-top:20px;
+    position:absolute;
+    left:0;
+}
+//搜索
+.search{
+    float:left;
+    width:440px;
+    height:60px;
+    margin-left:180px;
+}
+.search_top{
+    width:440px;
+    height:60px;
+    input:nth-child(1){
+        width:340px;
+        height:30px;
+        border:3px solid #ec3e7d;
+        color:#c9c9d3;
+        text-indent:5px;
+        margin-top:21px;
+        float:left;
+        outline: none;
+    }
+    input:nth-child(2){
+        width:87px;
+        height:36px;
+        border:3px solid #ec3e7d;
+        color:#fff;
+        margin-top:21px;
+        background:#ec3e7d;
+        float:left;
+        outline: none;
+    }
+}
+.search_bot{
+    margin-top:8px;
+    p{
+        font-size:12px;
+        color:#999;
+        a{
+            color:#999;
+            padding:3px;
+        }
+    }
+}
+
+//导航搜索模块
+.bannerM{
+    width:100%;
+    background:#fff;
+    height:36px;
+}
+.banner_center{
+    width:1230px;
+    height:36px;
+    position:relative;
+    margin:0 auto;
+}
+.navLeft{
+    width:190px;
+    height:36px;
+    background:#333;
+    float:left;
+    img{
+        float:left;
+        padding-left:16px;
+        padding-top:12px;
+        padding-right:17px;
+    }
+    p{
+        float:left;
+        color:#fff;
+        padding-top:7px;
+        font-size:16px;
+    }
+}
+.navRight{
+    width:1100px;
+    height:36px;
+    line-height:36px;
+    a{
+        float:left;
+        display:block;
+        margin:0 10px;
+        color:#0f1012;
+    }
+    a:nth-child(1){
+        width:90px;
+        float:left;
+        display:block;
+        margin-left:38px;
+        font-weight:600;
+        img{
+            float:right;
+            margin-top:7px;
+        }
+    }
+    a:nth-child(4){
+        width:90px;
+        float:left;
+        display:block;
+        font-weight: 100;
+        img{
+            float:right;
+            margin-top:7px;
+        }
+    }
+}
+//目录切换
+.tab {
+    width:190px;
+    height:420px;
+    position:absolute;
+    left:0px;
+    top: 36px;
+    display:none;
+}
+
+.nav_left {
+    width: 190px;
+    height: 420px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.nav_left ul {
+    width: 190px;
+    height: 420px;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0.9;
+    background: #fa3779;
+}
+
+.nav_left ul li {
+    height: 51px;
+    line-height: 51px;
+    text-align: left;
+    border-bottom:1px dashed #fff;
+}
+
+.nav_left ul li span {
+    text-indent: 15px;
+    height: 51px;
+    line-height: 51px;
+    display: block;
+    background: #fa3779;
+    color: #fff;
+}
+
+.nav_left ul li:last-child{
+    border-bottom:none;
+}
+
+.nav_left ul li span:hover {
+    color: #FF0036;
+    border:1px solid #fa3779;
+    border-right:none;
+    background: #FFFFFF;
+}
+
+.nav_right {
+    width: 800px;
+    height: 420px;
+    position: absolute;
+    left:190px;
+    top:0px;
+    opacity:0.9;
+}
+
+.sub {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 420px;
+    background: #FFFFFF;
+}
+
+.sub dl {
+    overflow: hidden;
+    padding: 0px 0px 10px 0px;
+}
+
+.sub dt {
+    width: 100px;
+    float: left;
+    display: block;
+    position: relative;
+    clear: left;
+}
+
+.sub dt a {
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sub dt i {
+    width: 4px;
+    right: 12px;
+    top: 2px;
+    font-size: 14px;
+    position: absolute;
+    font-style: normal;
+}
+
+.sub dd {
+    width: 680px;
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-right: 20px;
+    border-bottom: 1px dashed #E3E3E3;
+}
+
+.sub dd a {
+    font-size: 12px;
+    float: left;
+    color: #666;
+    padding: 0 10px;
+    margin: 4px 0px 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    border-left: 1px solid #E3E3E3;
+}
+
+.sub dd a:hover {
+    color: #FF0036;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+.message{
+    width:100%;
+    height:28px;
+    background:#ececec;
+}
+.message_center{
+    width:1230px;
+    height:28px;
+    margin:0 auto;
+    img{
+        padding-top:5px;
+        padding-left:2px;
+    }
+}
+
+//搜索导航
+.searchEV{
+    width:100%;
+    height:50px;
+}
+.searchCenterEV{
+    width:1090px;
+    height:40px;
+    margin:0 auto;
+    padding-top:10px;
+    a{
+        font-size:14px;
+        color:#888888;
+    }
+    a:hover{
+        color:#333333;
+    }
+    span{
+        color:#888888;
+    }
+    
+}
+
+
+//搜索可选项
+.Multiselection{
+    width:100%;
+    height:348px;
+}
+.Multiselectioncenter{
+    width:1090px;
+    height:348px;
+    margin:0 auto;
+}

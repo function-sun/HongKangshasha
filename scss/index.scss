@@ -20,6 +20,141 @@ ul li{
     list-style:none;
 }
 
+//购物车固定定位
+.ShoppingCart{
+    width:40px;
+    height:100%;
+    background:#4c4c4c;
+    position:fixed;
+    right:0;
+    top:0;
+    z-index:1;
+}
+.shoppinguser{
+    width:40px;
+    height:28px;
+    margin-top:178px;
+    text-align:center;
+    padding-top:10px;
+    position:relative;
+    i{
+        width:18px;
+        height:18px;
+        color:#d08c35;
+    }
+    img{
+        display:none;
+        position:absolute;
+        left:-90px;
+        top:0;
+    }
+}
+.shoppingcar{
+    width:40px;
+    height:106px;
+    padding-top:14px;
+    border-top:1px solid #666666;
+    border-bottom:1px solid #666666;
+    text-align:center;
+    i{
+        width:18px;
+        height:18px;
+        color:#d08c35;
+    }
+    p{
+        font-size:12px;
+        color:#fff;
+    }
+    span{
+        width:18px;
+        height:18px;
+        font-size:12px;
+        border-radius:50%;
+        background:#ec3f7e;
+        display:block;
+        margin-top:4px;
+        margin-left:11px;
+        color:#fff;
+    }
+}
+.shoppingzan{
+    width:40px;
+    height:26px;
+    text-align:center;
+    margin-top:11px;
+    padding-top:11px;
+    position:relative;
+    img{
+        display:none;
+        position:absolute;
+        left:-90px;
+        top:0;
+    }
+    i{
+        width:18px;
+        height:18px;
+        color:#d08c35;
+    }
+}
+.shoppinghistory{
+    width:40px;
+    height:26px;
+    text-align:center;
+    padding-top:11px;
+    position:relative;
+    img{
+        display:none;
+        position:absolute;
+        left:-90px;
+        top:0;
+    }
+    i{
+        width:18px;
+        height:18px;
+        color:#d08c35;
+    }
+}
+.shoppingservice{
+    width:40px;
+    height:26px;
+    text-align:center;
+    margin-top:290px;
+    padding-top:11px;
+    position:relative;
+    img{
+        display:none;
+        position:absolute;
+        left:-90px;
+        top:0;
+    }
+    i{
+        width:18px;
+        height:18px;
+        color:#d08c35;
+    }
+}
+.shoppingerweima{
+    width:40px;
+    height:26px;
+    text-align:center;
+    padding-top:11px;
+    i{
+        width:18px;
+        height:18px;
+        color:#d08c35;
+    }
+}
+.shoppingtop{
+    width:40px;
+    height:44px;
+    display:none;
+    p{
+        font-size:12px;
+        color:#fff;
+        margin-left:9px;
+    }
+}
+
 //登录注册引导模块
 .titleNavigation{
     width:100%;
@@ -57,6 +192,7 @@ ul li{
 .titleRight{
     height:32px;
     float:right;
+    margin-right:40px;
     a{
         display:inline-block;
         height:30px;
@@ -675,9 +811,12 @@ ul li{
 }
 .offerTimer{
     width:120px;
-    height:24px;
+    height:20px;
     background:#333;
     margin:40px 0 0 40px;
+    padding-top:4px;
+    color:#fff;
+    font-size:12px;
 }
 .watchMore{
     width:160px;
