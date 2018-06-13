@@ -147,44 +147,4 @@ $(function(){
 })
 
 
-//注册使用的正则表达式
-function checkAll(type,value){
-	var reg = null;
-	switch(type){
-		case "username":reg = /^[a-zA-Z_]\w{5,15}$/;break;
-		case "userpassword":reg = /^[a-zA-Z0-9]\w{6,16}$/;break;
-		case "useremail":reg = /^\w+@[a-zA-Z0-9]+\.(com|cn|net|top|vip)$/;break;
-		default:;
-	}
-	if(reg!=null){
-		if(reg.test(value)){
-			return true;
-		}
-	}
-	return false;	
-}
-$(function(){
-	$("#username1").blur(function(){
-		if(checkAll("username",this.value)==false){
-			$("#username1").css("border","1px solid #fc3f83");
-		}else{
-			$("#username1").css("border","1px solid #3ffc6b");
-		}
-	});
-	
-	$("#userpassword1").blur(function(){
-		if(checkAll("userpassword",this.value)==false){
-			$("#userpassword1").css("border","1px solid #fc3f83");
-		}else{
-			$("#userpassword1").css("border","1px solid #3ffc6b");
-		}
-	});
-	
-	$("#useremail1").blur(function(){
-		if(checkAll("useremail",this.value)==false){
-			$("#useremail1").css("border","1px solid #fc3f83");
-		}else{
-			$("#useremail1").css("border","1px solid #3ffc6b");
-		}
-	});
-})
+

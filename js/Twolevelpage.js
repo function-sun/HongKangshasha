@@ -41,8 +41,6 @@ $(function(){
 		function(){
 			$("#showMainOne").css("display","none");
 			$("#clickOne p:first-child").html("更多");
-			$("#showMainOne").css("display","block");
-			$("#clickOne p:first-child").html("收起");
 		}
 	)
 	
@@ -70,9 +68,6 @@ $(function(){
 			$(this).css("box-shadow","none");
 		}
 	)
-
-	
-	
 	
 	$("#onePic img:nth-child(1)").mouseenter(function(){
 		$("#onePic img:nth-child(1)").css("border","4px solid #c69a62");

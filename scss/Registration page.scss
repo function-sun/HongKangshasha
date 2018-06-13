@@ -139,6 +139,7 @@ ul li{
     margin-top:40px;
     float:left;
     box-shadow:0 0 10px #cecece;
+    position:relative;
     input:nth-child(2){
         width:350px;
         height:36px;
@@ -147,7 +148,7 @@ ul li{
         margin-bottom:25px;
         margin-left:35px;
     }
-    input:nth-child(3){
+    input:nth-child(5){
         width:350px;
         height:36px;
         border:1px solid #cccccc;
@@ -155,7 +156,7 @@ ul li{
         margin-bottom:25px;
         margin-left:35px;
     }
-    input:nth-child(4){
+    input:nth-child(11){
         width:350px;
         height:36px;
         border:1px solid #cccccc;
@@ -163,7 +164,7 @@ ul li{
         margin-bottom:25px;
         margin-left:35px;
     }
-    input:nth-child(8){
+    input:nth-child(17){
         width:350px;
         height:40px;
         border:none;
@@ -172,6 +173,86 @@ ul li{
         color:#fff;
         background:#fc3f83;
         margin-left:35px;
+    }
+}
+.falseTishiO{
+    position:absolute;
+    left:35px;
+    top:139px;
+    display:none;
+    img{
+        float:left;
+    }
+    p{
+        float:left;
+        font-size:12px;
+        color:#666;
+    }
+}
+.falseTishiT{
+    position:absolute;
+    left:35px;
+    top:203px;
+    display:none;
+    img{
+        float:left;
+    }
+    p{
+        float:left;
+        font-size:12px;
+        color:#666;
+    }
+}
+.cipherStrength1{
+    position:absolute;
+    left:355px;
+    top:170px;
+    display:none;
+}
+.cipherStrength2{
+    position:absolute;
+    left:355px;
+    top:170px;
+    display:none;
+}
+.cipherStrength3{
+    position:absolute;
+    left:355px;
+    top:170px;
+    display:none;
+}
+.cipherStrength4{
+    position:absolute;
+    left:355px;
+    top:170px;
+    display:none;
+}
+.falseTishiTH{
+    position:absolute;
+    left:35px;
+    top:266px;
+    display:none;
+    img{
+        float:left;
+    }
+    p{
+        float:left;
+        font-size:12px;
+        color:#666;
+    }
+}
+.falseTishiYan{
+    position:absolute;
+    left:35px;
+    top:328px;
+    display:none;
+    img{
+        float:left;
+    }
+    p{
+        float:left;
+        font-size:12px;
+        color:#666;
     }
 }
 .inputBox{

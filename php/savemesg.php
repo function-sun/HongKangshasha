@@ -15,5 +15,5 @@
 	// (4)、关闭数据库
 	mysql_close($conn);
 	//3、响应（告诉前端，保存成功）
-	echo "注册成功";
+	echo "reg success";
 ?>
